@@ -149,3 +149,53 @@ C:\Users\iamsh\anaconda3\Scripts\conda.exe run -n ds-sprint python -c "print('he
 ```powershell
 conda activate ds-sprint
 ```
+
+### 10. Milestone 4.6: Verification of Python, Conda, and Jupyter
+
+This section is verification-only proof that the local Data Science environment is stable and ready.
+
+#### System and Environment
+
+- Operating System: Windows 11 Home Single Language
+- Python (system): 3.13.5
+- Conda: 25.11.1
+- Verified environment: ds-sprint (Python 3.11.15)
+
+#### Verification Commands and Proof
+
+```powershell
+python --version
+# Python 3.13.5
+
+python -c "print('python-ok')"
+# python-ok
+
+C:\Users\iamsh\anaconda3\Scripts\conda.exe --version
+# conda 25.11.1
+
+C:\Users\iamsh\anaconda3\Scripts\conda.exe env list
+# base                     C:\Users\iamsh\anaconda3
+# ds-sprint                C:\Users\iamsh\anaconda3\envs\ds-sprint
+
+cmd /v:on /c "call C:\Users\iamsh\anaconda3\Scripts\activate.bat ds-sprint && echo ACTIVE_ENV=!CONDA_DEFAULT_ENV! && python --version"
+# ACTIVE_ENV=ds-sprint
+# Python 3.11.15
+
+C:\Users\iamsh\anaconda3\Scripts\conda.exe run -n ds-sprint jupyter --version
+# (Output includes jupyterlab 4.5.6, notebook 7.5.5, ipykernel 7.2.0)
+
+C:\Users\iamsh\anaconda3\envs\ds-sprint\Scripts\jupyter-lab.exe --no-browser --port 8890
+# Jupyter Server 2.17.0 is running at:
+# http://localhost:8890/lab?token=...
+
+C:\Users\iamsh\anaconda3\Scripts\conda.exe run -n ds-sprint jupyter nbconvert --to notebook --execute --inplace jupyter_verify_temp.ipynb
+# result: 5
+```
+
+#### Verification Result
+
+- Python is callable and stable from terminal.
+- Conda environments are listed and can be activated.
+- The `ds-sprint` environment runs Python 3.11.15 as expected.
+- JupyterLab starts successfully and serves on localhost.
+- A notebook cell executes successfully (`result: 5`), confirming Jupyter kernel functionality.
