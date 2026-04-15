@@ -63,3 +63,89 @@ This system can be made even better:
 ### 8. Final Summary
 
 This project helps retail chains move from generic marketing to smart personalization. By using behavioural clustering, it groups customers based on their shopping habits, like what they buy and how often. These groups then receive tailored offers that match their preferences, such as luxury deals for big spenders and discounts for bargain hunters. This approach makes marketing more effective and helps build stronger customer loyalty.
+
+### 9. Milestone 4.5: Local Data Science Environment Setup Proof
+
+This section documents the local setup required for the Data Science sprint and provides terminal proof that the environment is ready for notebooks, scripts, ML workflows, and Streamlit-based development.
+
+#### Operating System
+
+- Windows
+
+#### Installed Versions
+
+- Python (system): `3.13.5`
+- Anaconda (conda): `25.11.1`
+- Conda environment for sprint: `ds-sprint` with Python `3.11.15`
+
+#### Setup Steps Performed
+
+1. Verified existing Python installation from terminal.
+2. Installed Anaconda using `winget`.
+3. Verified Conda installation and base path.
+4. Accepted required Conda Terms of Service channels.
+5. Created a dedicated environment `ds-sprint` with Python 3.11.
+6. Installed starter Data Science packages in `ds-sprint`:
+    - `numpy`
+    - `pandas`
+    - `scikit-learn`
+    - `jupyter`
+7. Validated environment by running Python and importing the installed packages.
+
+#### Verification Commands and Outputs
+
+```powershell
+python --version
+# Python 3.13.5
+
+where.exe python
+# C:\Users\iamsh\AppData\Local\Programs\Python\Python313\python.exe
+# C:\Users\iamsh\AppData\Local\Microsoft\WindowsApps\python.exe
+
+python -c "import sys; print('executable:', sys.executable); print('version:', sys.version.split()[0]); print('ok')"
+# executable: C:\Users\iamsh\AppData\Local\Programs\Python\Python313\python.exe
+# version: 3.13.5
+# ok
+```
+
+```powershell
+winget install -e --id Anaconda.Anaconda3 --accept-source-agreements --accept-package-agreements
+# Successfully installed Anaconda3 (2025.12-2)
+
+C:\Users\iamsh\anaconda3\Scripts\conda.exe --version
+# conda 25.11.1
+
+C:\Users\iamsh\anaconda3\Scripts\conda.exe info --base
+# C:\Users\iamsh\anaconda3
+
+C:\Users\iamsh\anaconda3\Scripts\conda.exe tos accept --override-channels --channel https://repo.anaconda.com/pkgs/main
+C:\Users\iamsh\anaconda3\Scripts\conda.exe tos accept --override-channels --channel https://repo.anaconda.com/pkgs/r
+C:\Users\iamsh\anaconda3\Scripts\conda.exe tos accept --override-channels --channel https://repo.anaconda.com/pkgs/msys2
+# accepted Terms of Service for all required channels
+
+C:\Users\iamsh\anaconda3\Scripts\conda.exe create -y -n ds-sprint python=3.11
+# environment location: C:\Users\iamsh\anaconda3\envs\ds-sprint
+
+C:\Users\iamsh\anaconda3\Scripts\conda.exe env list
+# base                     C:\Users\iamsh\anaconda3
+# ds-sprint                C:\Users\iamsh\anaconda3\envs\ds-sprint
+
+C:\Users\iamsh\anaconda3\Scripts\conda.exe run -n ds-sprint python --version
+# Python 3.11.15
+
+C:\Users\iamsh\anaconda3\Scripts\conda.exe install -y -n ds-sprint numpy pandas scikit-learn jupyter
+C:\Users\iamsh\anaconda3\Scripts\conda.exe run -n ds-sprint python -c "import numpy, pandas, sklearn, jupyter; print('packages-ok')"
+# packages-ok
+
+C:\Users\iamsh\anaconda3\Scripts\conda.exe run -n ds-sprint python -c "print('hello from ds-sprint')"
+# hello from ds-sprint
+```
+
+#### Notes
+
+- If `conda` is not immediately available in a new terminal, use the full path above or reopen terminal after running Anaconda installation.
+- Preferred sprint environment command:
+
+```powershell
+conda activate ds-sprint
+```
