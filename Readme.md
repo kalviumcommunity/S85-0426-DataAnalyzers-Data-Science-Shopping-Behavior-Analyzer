@@ -1,6 +1,6 @@
 ### 1. Problem Statement
 
-Retail chains want to send personalized offers to customers, but it's a tough challenge. Imagine a store with millions of customers; you can't manually figure out what each person likes. Most stores have a lot of data about what people buy, but they struggle to turn that data into smart decisions. They often end up sending the same generic offers to everyone, which most people ignore. Personalization is difficult because they lack clear insights into what different groups, or "segments," of customers actually prefer.
+Retail chains want to send personalized offers to customers, but it's a tough challenge. Imagine a store with millions of customers; you can't manually figure out what each person likes. Most stores have a lot of data about what people buy, but they struggle to turn that data into smart decisions. They often end up sending the same generic offers to everyone, which most people ignore. Personalization is difficult because they lack clear insights into what different groups, or "segments," of customers actually prefer.   
 
 ### 2. Objective
 
