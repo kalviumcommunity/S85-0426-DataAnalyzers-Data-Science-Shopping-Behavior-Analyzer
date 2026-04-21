@@ -149,3 +149,68 @@ C:\Users\iamsh\anaconda3\Scripts\conda.exe run -n ds-sprint python -c "print('he
 ```powershell
 conda activate ds-sprint
 ```
+
+### 10. Milestone 4.10: Writing Markdown for Headings, Lists, and Code Blocks in Notebooks
+
+This milestone demonstrates clear documentation inside a Jupyter Notebook. The goal is to show how Markdown can structure a notebook so that the flow is easy to follow for reviewers and teammates.
+
+#### Notebook Artifact
+
+- [Markdown_Notebook_Milestone.ipynb](notebooks/Markdown_Notebook_Milestone.ipynb)
+
+#### What the Notebook Demonstrates
+
+1. Headings for organizing notebook sections.
+2. Ordered and unordered lists for structured explanations.
+3. Inline code such as `customer_id` and `summarize_items()`.
+4. A fenced code block inside a Markdown cell.
+5. A clean alternation between Markdown cells and code cells.
+
+#### Why This Matters
+
+- Markdown explains the purpose of the code, not just the output.
+- Clear structure makes the notebook easier to review and reuse.
+- Good documentation helps teammates understand why each step exists.
+
+#### Submission Notes
+
+- The notebook is focused on communication rather than analysis.
+- A short screen recording should show the Markdown cells, code cells, and the explanation of why documentation improves readability.
+
+### 11. Milestone 4.11: Creating a Project Folder Structure for Data Science Work
+
+This milestone demonstrates a clean and predictable project layout for Data Science work. The goal is to separate notebooks, raw data, processed data, and outputs so the repository stays easy to understand and maintain.
+
+#### Recommended Folder Structure
+
+```text
+S85-0426-DataAnalyzers-Data-Science-Shopping-Behavior-Analyzer/
+├── data/
+│   ├── raw/
+│   └── processed/
+├── notebooks/
+├── outputs/
+│   ├── figures/
+│   └── reports/
+└── scripts/
+```
+
+#### Why This Structure Helps
+
+- `data/raw` keeps original files untouched.
+- `data/processed` stores cleaned or transformed data.
+- `notebooks` keeps exploratory or documentation-focused work separate.
+- `outputs` holds generated results, charts, and exported reports.
+- `scripts` keeps reusable Python code isolated from notebooks.
+
+#### Organization Principles
+
+1. Use simple, lowercase folder names.
+2. Keep raw data separate from generated artifacts.
+3. Avoid mixing notebooks, scripts, and outputs in the same folder.
+4. Use predictable paths so collaborators can find files quickly.
+
+#### Submission Notes
+
+- The repository is being structured to support clarity and reuse.
+- A short walkthrough video should show the root project folder, explain each subfolder, and describe why the structure makes collaboration easier.
