@@ -214,3 +214,40 @@ S85-0426-DataAnalyzers-Data-Science-Shopping-Behavior-Analyzer/
 
 - The repository is being structured to support clarity and reuse.
 - A short walkthrough video should show the root project folder, explain each subfolder, and describe why the structure makes collaboration easier.
+
+### 12. Milestone 4.12: Organizing Raw Data, Processed Data, and Output Artifacts
+
+This milestone demonstrates clean separation across the data lifecycle. Raw data, processed data, and output artifacts are kept in different locations so the project remains reproducible, auditable, and easy to maintain.
+
+#### Data Lifecycle Layout
+
+```text
+S85-0426-DataAnalyzers-Data-Science-Shopping-Behavior-Analyzer/
+├── data/
+│   ├── raw/
+│   └── processed/
+├── outputs/
+│   ├── figures/
+│   └── reports/
+└── notebooks/
+```
+
+#### Folder Purpose
+
+- `data/raw` stores original input files exactly as received.
+- `data/processed` stores cleaned or transformed datasets derived from raw inputs.
+- `outputs/figures` stores generated plots and visual artifacts.
+- `outputs/reports` stores exported summaries or written reports.
+- `notebooks` stores analysis or documentation notebooks that read from data and write to outputs when needed.
+
+#### Data Discipline Principles
+
+1. Never edit raw data directly.
+2. Save derived datasets in `data/processed` with clear names.
+3. Keep output artifacts separate from input data.
+4. Use one-directional flow from raw to processed to outputs.
+
+#### Submission Notes
+
+- The repository now contains separate folders for the required data stages.
+- A short video should show the raw, processed, and output folders and explain why this separation protects data integrity and reproducibility.
