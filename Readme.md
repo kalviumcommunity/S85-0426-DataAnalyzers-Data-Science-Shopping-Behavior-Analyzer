@@ -150,52 +150,67 @@ C:\Users\iamsh\anaconda3\Scripts\conda.exe run -n ds-sprint python -c "print('he
 conda activate ds-sprint
 ```
 
-### 10. Milestone 4.6: Verification of Python, Conda, and Jupyter
+### 10. Milestone 4.10: Writing Markdown for Headings, Lists, and Code Blocks in Notebooks
 
-This section is verification-only proof that the local Data Science environment is stable and ready.
+This milestone demonstrates clear documentation inside a Jupyter Notebook. The goal is to show how Markdown can structure a notebook so that the flow is easy to follow for reviewers and teammates.
 
-#### System and Environment
+#### Notebook Artifact
 
-- Operating System: Windows 11 Home Single Language
-- Python (system): 3.13.5
-- Conda: 25.11.1
-- Verified environment: ds-sprint (Python 3.11.15)
+- [Markdown_Notebook_Milestone.ipynb](notebooks/Markdown_Notebook_Milestone.ipynb)
 
-#### Verification Commands and Proof
+#### What the Notebook Demonstrates
 
-```powershell
-python --version
-# Python 3.13.5
+1. Headings for organizing notebook sections.
+2. Ordered and unordered lists for structured explanations.
+3. Inline code such as `customer_id` and `summarize_items()`.
+4. A fenced code block inside a Markdown cell.
+5. A clean alternation between Markdown cells and code cells.
 
-python -c "print('python-ok')"
-# python-ok
+#### Why This Matters
 
-C:\Users\iamsh\anaconda3\Scripts\conda.exe --version
-# conda 25.11.1
+- Markdown explains the purpose of the code, not just the output.
+- Clear structure makes the notebook easier to review and reuse.
+- Good documentation helps teammates understand why each step exists.
 
-C:\Users\iamsh\anaconda3\Scripts\conda.exe env list
-# base                     C:\Users\iamsh\anaconda3
-# ds-sprint                C:\Users\iamsh\anaconda3\envs\ds-sprint
+#### Submission Notes
 
-cmd /v:on /c "call C:\Users\iamsh\anaconda3\Scripts\activate.bat ds-sprint && echo ACTIVE_ENV=!CONDA_DEFAULT_ENV! && python --version"
-# ACTIVE_ENV=ds-sprint
-# Python 3.11.15
+- The notebook is focused on communication rather than analysis.
+- A short screen recording should show the Markdown cells, code cells, and the explanation of why documentation improves readability.
 
-C:\Users\iamsh\anaconda3\Scripts\conda.exe run -n ds-sprint jupyter --version
-# (Output includes jupyterlab 4.5.6, notebook 7.5.5, ipykernel 7.2.0)
+### 11. Milestone 4.11: Creating a Project Folder Structure for Data Science Work
 
-C:\Users\iamsh\anaconda3\envs\ds-sprint\Scripts\jupyter-lab.exe --no-browser --port 8890
-# Jupyter Server 2.17.0 is running at:
-# http://localhost:8890/lab?token=...
+This milestone demonstrates a clean and predictable project layout for Data Science work. The goal is to separate notebooks, raw data, processed data, and outputs so the repository stays easy to understand and maintain.
 
-C:\Users\iamsh\anaconda3\Scripts\conda.exe run -n ds-sprint jupyter nbconvert --to notebook --execute --inplace jupyter_verify_temp.ipynb
-# result: 5
+#### Recommended Folder Structure
+
+```text
+S85-0426-DataAnalyzers-Data-Science-Shopping-Behavior-Analyzer/
+├── data/
+│   ├── raw/
+│   └── processed/
+├── notebooks/
+├── outputs/
+│   ├── figures/
+│   └── reports/
+└── scripts/
 ```
 
-#### Verification Result
+#### Why This Structure Helps
 
-- Python is callable and stable from terminal.
-- Conda environments are listed and can be activated.
-- The `ds-sprint` environment runs Python 3.11.15 as expected.
-- JupyterLab starts successfully and serves on localhost.
-- A notebook cell executes successfully (`result: 5`), confirming Jupyter kernel functionality.
+- `data/raw` keeps original files untouched.
+- `data/processed` stores cleaned or transformed data.
+- `notebooks` keeps exploratory or documentation-focused work separate.
+- `outputs` holds generated results, charts, and exported reports.
+- `scripts` keeps reusable Python code isolated from notebooks.
+
+#### Organization Principles
+
+1. Use simple, lowercase folder names.
+2. Keep raw data separate from generated artifacts.
+3. Avoid mixing notebooks, scripts, and outputs in the same folder.
+4. Use predictable paths so collaborators can find files quickly.
+
+#### Submission Notes
+
+- The repository is being structured to support clarity and reuse.
+- A short walkthrough video should show the root project folder, explain each subfolder, and describe why the structure makes collaboration easier.
