@@ -380,3 +380,22 @@ This milestone documents a first look at how often customers shop. The goal is t
 #### Submission Notes
 
 - A short walkthrough should show the chart and the main frequency takeaway.
+
+### 19. Milestone 4.19: Comparing Spend Distributions
+
+This milestone documents a simple comparison of customer spending patterns. The goal is to see whether spend clusters naturally separate in the data.
+
+#### What It Demonstrates
+
+1. Summarizing total and average spend.
+1. Comparing high and low spenders.
+1. Looking for skewed distributions.
+
+#### Why This Matters
+
+- Spend helps distinguish customer value segments.
+- Distribution shape influences feature scaling choices.
+
+#### Submission Notes
+
+- A short walkthrough should show the spend summary and one supporting chart.
