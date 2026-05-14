@@ -251,3 +251,56 @@ S85-0426-DataAnalyzers-Data-Science-Shopping-Behavior-Analyzer/
 
 - The repository now contains separate folders for the required data stages.
 - A short video should show the raw, processed, and output folders and explain why this separation protects data integrity and reproducibility.
+
+### 13. Milestone 4.13: Creating and Running a First Python Script for Data Analysis
+
+This milestone demonstrates a standalone Python script that runs outside Jupyter Notebook. The script uses simple numeric and string values to show how analysis code can be executed in a repeatable, command-line-friendly way.
+
+#### Script Artifact
+
+- [scripts/first_data_analysis.py](scripts/first_data_analysis.py)
+
+#### What the Script Demonstrates
+
+1. Defining simple variables with numbers and text.
+2. Performing basic calculations such as totals and averages.
+3. Printing results to the console with clear labels.
+4. Using a proper script entry point with `if __name__ == "__main__":`.
+
+#### How to Run It
+
+```powershell
+python scripts/first_data_analysis.py
+```
+
+#### Why Scripts Matter
+
+- Scripts run from top to bottom and are easier to automate than notebooks.
+- They do not depend on notebook state or manually run cells.
+- They are better for repeatable workflows and simple data tasks.
+
+#### Submission Notes
+
+- The script is intentionally small and focused on execution flow.
+- A short screen recording should show the script file, the terminal run, and the printed output.
+
+### 14. Milestone 4.14: Reviewing Raw Data Columns and Types
+
+This milestone documents the first structured inspection of the transaction dataset. The goal is to confirm which columns exist, what types they use, and which fields will need cleanup before analysis begins.
+
+#### What It Demonstrates
+
+1. Loading the raw dataset into a notebook or script.
+2. Checking column names, data types, and missing values.
+3. Identifying fields that need renaming or type conversion.
+
+#### Why This Matters
+
+- Early inspection prevents avoidable errors later in the pipeline.
+- Knowing the schema helps define a clean preprocessing plan.
+- A quick review makes it easier to explain the dataset during presentation.
+
+#### Submission Notes
+
+- The focus is on understanding the raw inputs before any transformations happen.
+- A short walkthrough should show the dataset preview and the schema summary.
