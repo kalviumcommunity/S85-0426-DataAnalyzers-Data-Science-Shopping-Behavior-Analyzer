@@ -304,3 +304,22 @@ This milestone documents the first structured inspection of the transaction data
 
 - The focus is on understanding the raw inputs before any transformations happen.
 - A short walkthrough should show the dataset preview and the schema summary.
+
+### 15. Milestone 4.15: Cleaning Missing Values and Duplicates
+
+This milestone documents the first cleanup pass on the raw dataset. The goal is to remove obvious noise so the clustering inputs are reliable.
+
+#### What It Demonstrates
+
+1. Identifying missing values.
+1. Dropping duplicate rows when appropriate.
+1. Deciding which records need further review.
+
+#### Why This Matters
+
+- Clean inputs make patterns easier to trust.
+- Basic cleanup reduces the risk of misleading clusters.
+
+#### Submission Notes
+
+- A short walkthrough should show the before-and-after row counts and missing-value summary.
