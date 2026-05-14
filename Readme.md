@@ -1,6 +1,6 @@
 ### 1. Problem Statement
 
-Retail chains want to send personalized offers to customers, but it's a tough challenge. Imagine a store with millions of customers; you can't manually figure out what each person likes. Most stores have a lot of data about what people buy, but they struggle to turn that data into smart decisions. They often end up sending the same generic offers to everyone, which most people ignore. Personalization is difficult because they lack clear insights into what different groups, or "segments," of customers actually prefer.
+Retail chains want to send personalized offers to customers, but it's a tough challenge. Imagine a store with millions of customers; you can't manually figure out what each person likes. Most stores have a lot of data about what people buy, but they struggle to turn that data into smart decisions. They often end up sending the same generic offers to everyone, which most people ignore. Personalization is difficult because they lack clear insights into what different groups, or "segments," of customers actually prefer.   
 
 ### 2. Objective
 
@@ -149,3 +149,538 @@ C:\Users\iamsh\anaconda3\Scripts\conda.exe run -n ds-sprint python -c "print('he
 ```powershell
 conda activate ds-sprint
 ```
+
+### 10. Milestone 4.10: Writing Markdown for Headings, Lists, and Code Blocks in Notebooks
+
+This milestone demonstrates clear documentation inside a Jupyter Notebook. The goal is to show how Markdown can structure a notebook so that the flow is easy to follow for reviewers and teammates.
+
+#### Notebook Artifact
+
+- [Markdown_Notebook_Milestone.ipynb](notebooks/Markdown_Notebook_Milestone.ipynb)
+
+#### What the Notebook Demonstrates
+
+1. Headings for organizing notebook sections.
+2. Ordered and unordered lists for structured explanations.
+3. Inline code such as `customer_id` and `summarize_items()`.
+4. A fenced code block inside a Markdown cell.
+5. A clean alternation between Markdown cells and code cells.
+
+#### Why This Matters
+
+- Markdown explains the purpose of the code, not just the output.
+- Clear structure makes the notebook easier to review and reuse.
+- Good documentation helps teammates understand why each step exists.
+
+#### Submission Notes
+
+- The notebook is focused on communication rather than analysis.
+- A short screen recording should show the Markdown cells, code cells, and the explanation of why documentation improves readability.
+
+### 11. Milestone 4.11: Creating a Project Folder Structure for Data Science Work
+
+This milestone demonstrates a clean and predictable project layout for Data Science work. The goal is to separate notebooks, raw data, processed data, and outputs so the repository stays easy to understand and maintain.
+
+#### Recommended Folder Structure
+
+```text
+S85-0426-DataAnalyzers-Data-Science-Shopping-Behavior-Analyzer/
+├── data/
+│   ├── raw/
+│   └── processed/
+├── notebooks/
+├── outputs/
+│   ├── figures/
+│   └── reports/
+└── scripts/
+```
+
+#### Why This Structure Helps
+
+- `data/raw` keeps original files untouched.
+- `data/processed` stores cleaned or transformed data.
+- `notebooks` keeps exploratory or documentation-focused work separate.
+- `outputs` holds generated results, charts, and exported reports.
+- `scripts` keeps reusable Python code isolated from notebooks.
+
+#### Organization Principles
+
+1. Use simple, lowercase folder names.
+2. Keep raw data separate from generated artifacts.
+3. Avoid mixing notebooks, scripts, and outputs in the same folder.
+4. Use predictable paths so collaborators can find files quickly.
+
+#### Submission Notes
+
+- The repository is being structured to support clarity and reuse.
+- A short walkthrough video should show the root project folder, explain each subfolder, and describe why the structure makes collaboration easier.
+
+### 12. Milestone 4.12: Organizing Raw Data, Processed Data, and Output Artifacts
+
+This milestone demonstrates clean separation across the data lifecycle. Raw data, processed data, and output artifacts are kept in different locations so the project remains reproducible, auditable, and easy to maintain.
+
+#### Data Lifecycle Layout
+
+```text
+S85-0426-DataAnalyzers-Data-Science-Shopping-Behavior-Analyzer/
+├── data/
+│   ├── raw/
+│   └── processed/
+├── outputs/
+│   ├── figures/
+│   └── reports/
+└── notebooks/
+```
+
+#### Folder Purpose
+
+- `data/raw` stores original input files exactly as received.
+- `data/processed` stores cleaned or transformed datasets derived from raw inputs.
+- `outputs/figures` stores generated plots and visual artifacts.
+- `outputs/reports` stores exported summaries or written reports.
+- `notebooks` stores analysis or documentation notebooks that read from data and write to outputs when needed.
+
+#### Data Discipline Principles
+
+1. Never edit raw data directly.
+2. Save derived datasets in `data/processed` with clear names.
+3. Keep output artifacts separate from input data.
+4. Use one-directional flow from raw to processed to outputs.
+
+#### Submission Notes
+
+- The repository now contains separate folders for the required data stages.
+- A short video should show the raw, processed, and output folders and explain why this separation protects data integrity and reproducibility.
+
+### 13. Milestone 4.13: Creating and Running a First Python Script for Data Analysis
+
+This milestone demonstrates a standalone Python script that runs outside Jupyter Notebook. The script uses simple numeric and string values to show how analysis code can be executed in a repeatable, command-line-friendly way.
+
+#### Script Artifact
+
+- [scripts/first_data_analysis.py](scripts/first_data_analysis.py)
+
+#### What the Script Demonstrates
+
+1. Defining simple variables with numbers and text.
+2. Performing basic calculations such as totals and averages.
+3. Printing results to the console with clear labels.
+4. Using a proper script entry point with `if __name__ == "__main__":`.
+
+#### How to Run It
+
+```powershell
+python scripts/first_data_analysis.py
+```
+
+#### Why Scripts Matter
+
+- Scripts run from top to bottom and are easier to automate than notebooks.
+- They do not depend on notebook state or manually run cells.
+- They are better for repeatable workflows and simple data tasks.
+
+#### Submission Notes
+
+- The script is intentionally small and focused on execution flow.
+- A short screen recording should show the script file, the terminal run, and the printed output.
+
+### 14. Milestone 4.14: Reviewing Raw Data Columns and Types
+
+This milestone documents the first structured inspection of the transaction dataset. The goal is to confirm which columns exist, what types they use, and which fields will need cleanup before analysis begins.
+
+#### What It Demonstrates
+
+1. Loading the raw dataset into a notebook or script.
+2. Checking column names, data types, and missing values.
+3. Identifying fields that need renaming or type conversion.
+
+#### Why This Matters
+
+- Early inspection prevents avoidable errors later in the pipeline.
+- Knowing the schema helps define a clean preprocessing plan.
+- A quick review makes it easier to explain the dataset during presentation.
+
+#### Submission Notes
+
+- The focus is on understanding the raw inputs before any transformations happen.
+- A short walkthrough should show the dataset preview and the schema summary.
+
+### 15. Milestone 4.15: Cleaning Missing Values and Duplicates
+
+This milestone documents the first cleanup pass on the raw dataset. The goal is to remove obvious noise so the clustering inputs are reliable.
+
+#### What It Demonstrates
+
+1. Identifying missing values.
+1. Dropping duplicate rows when appropriate.
+1. Deciding which records need further review.
+
+#### Why This Matters
+
+- Clean inputs make patterns easier to trust.
+- Basic cleanup reduces the risk of misleading clusters.
+
+#### Submission Notes
+
+- A short walkthrough should show the before-and-after row counts and missing-value summary.
+
+### 16. Milestone 4.16: Standardizing Customer Identifiers
+
+This milestone documents a small normalization step for customer identifiers so records can be grouped consistently across files and analysis steps.
+
+#### What It Demonstrates
+
+1. Checking identifier formats.
+1. Removing inconsistent spacing or casing.
+1. Confirming each customer maps to a stable key.
+
+#### Why This Matters
+
+- Consistent IDs prevent duplicate customer records.
+- Stable keys make joins and summaries more dependable.
+
+#### Submission Notes
+
+- A short walkthrough should show the original and cleaned identifier examples.
+
+### 17. Milestone 4.17: Building Customer-Level Aggregates
+
+This milestone documents how raw transactions are turned into one row per customer. The goal is to build the features needed for clustering.
+
+#### What It Demonstrates
+
+1. Grouping transactions by customer.
+1. Calculating purchase frequency and spend totals.
+1. Creating a compact analysis table.
+
+#### Why This Matters
+
+- Clustering works better on customer-level features.
+- Aggregates make behavior patterns easier to compare.
+
+#### Submission Notes
+
+- A short walkthrough should show the source table and the aggregated output.
+
+### 18. Milestone 4.18: Visualizing Purchase Frequency
+
+This milestone documents a first look at how often customers shop. The goal is to understand the spread before choosing modeling features.
+
+#### What It Demonstrates
+
+1. Counting purchases per customer.
+1. Plotting a distribution or bar chart.
+1. Spotting unusually active shoppers.
+
+#### Why This Matters
+
+- Visuals reveal structure faster than tables alone.
+- Frequency is often a strong behavioral signal.
+
+#### Submission Notes
+
+- A short walkthrough should show the chart and the main frequency takeaway.
+
+### 19. Milestone 4.19: Comparing Spend Distributions
+
+This milestone documents a simple comparison of customer spending patterns. The goal is to see whether spend clusters naturally separate in the data.
+
+#### What It Demonstrates
+
+1. Summarizing total and average spend.
+1. Comparing high and low spenders.
+1. Looking for skewed distributions.
+
+#### Why This Matters
+
+- Spend helps distinguish customer value segments.
+- Distribution shape influences feature scaling choices.
+
+#### Submission Notes
+
+- A short walkthrough should show the spend summary and one supporting chart.
+
+### 20. Milestone 4.20: Selecting Features for Clustering
+
+This milestone documents feature selection for the segmentation model. The goal is to keep the inputs focused on shopping behavior rather than noise.
+
+#### What It Demonstrates
+
+1. Reviewing candidate columns.
+1. Dropping redundant or unstable fields.
+1. Keeping features that reflect behavior.
+
+#### Why This Matters
+
+- Good features improve cluster quality.
+- Focused inputs make the model easier to explain.
+
+#### Submission Notes
+
+- A short walkthrough should show why each selected feature was kept.
+
+### 21. Milestone 4.21: Scaling Numeric Features
+
+This milestone documents feature scaling before clustering. The goal is to prevent large-value columns from dominating the model.
+
+#### What It Demonstrates
+
+1. Applying a numeric scaler.
+1. Comparing raw and scaled values.
+1. Checking that all features sit on a similar range.
+
+#### Why This Matters
+
+- K-Means is sensitive to feature scale.
+- Balanced inputs create fairer distance calculations.
+
+#### Submission Notes
+
+- A short walkthrough should show the scaling step and one before/after comparison.
+
+### 22. Milestone 4.22: Using the Elbow Method
+
+This milestone documents the search for a sensible cluster count. The goal is to compare model fit across several values of K.
+
+#### What It Demonstrates
+
+1. Fitting several K-Means models.
+1. Plotting inertia or within-cluster distance.
+1. Choosing a candidate cluster count.
+
+#### Why This Matters
+
+- A good K avoids both over-splitting and over-merging.
+- The elbow plot provides a simple decision aid.
+
+#### Submission Notes
+
+- A short walkthrough should show the elbow plot and the chosen K.
+
+### 23. Milestone 4.23: Training the K-Means Model
+
+This milestone documents the main clustering run. The goal is to assign each customer to a segment based on the selected features.
+
+#### What It Demonstrates
+
+1. Creating the final K-Means model.
+1. Fitting it on the scaled customer table.
+1. Saving the assigned cluster labels.
+
+#### Why This Matters
+
+- This is the core segmentation step.
+- The labels become the basis for downstream analysis.
+
+#### Submission Notes
+
+- A short walkthrough should show the fitted model and the new cluster column.
+
+### 24. Milestone 4.24: Reading Cluster Centroids
+
+This milestone documents the interpretation of cluster centroids. The goal is to understand what makes each segment different from the others.
+
+#### What It Demonstrates
+
+1. Inspecting cluster centers.
+1. Comparing averages across segments.
+1. Translating numbers into customer behavior.
+
+#### Why This Matters
+
+- Centroids explain why clusters were formed.
+- Interpretation turns model output into business insight.
+
+#### Submission Notes
+
+- A short walkthrough should show the centroid table and the main segment traits.
+
+### 25. Milestone 4.25: Naming Customer Segments
+
+This milestone documents the business-friendly naming of clusters. The goal is to turn numeric labels into understandable audience groups.
+
+#### What It Demonstrates
+
+1. Reviewing cluster characteristics.
+1. Assigning descriptive segment names.
+1. Mapping labels to marketing language.
+
+#### Why This Matters
+
+- Readable names make the model usable by non-technical teams.
+- Clear segment labels help with communication and reporting.
+
+#### Submission Notes
+
+- A short walkthrough should show the label mapping and the reasoning behind it.
+
+### 26. Milestone 4.26: Comparing Segments with Charts
+
+This milestone documents visual comparisons between clusters. The goal is to make differences easy to spot in a presentation or notebook.
+
+#### What It Demonstrates
+
+1. Building side-by-side charts.
+1. Comparing spend, frequency, or basket size.
+1. Highlighting the strongest segment differences.
+
+#### Why This Matters
+
+- Charts make clusters easier to review quickly.
+- Visual comparisons support stakeholder discussions.
+
+#### Submission Notes
+
+- A short walkthrough should show at least one chart comparing all segments.
+
+### 27. Milestone 4.27: Reusing Analysis Functions
+
+This milestone documents reusable helper functions for the analysis pipeline. The goal is to reduce repetition and keep the notebook easier to maintain.
+
+#### What It Demonstrates
+
+1. Moving repeated logic into functions.
+1. Passing data through clear inputs and outputs.
+1. Keeping the workflow easier to read.
+
+#### Why This Matters
+
+- Reusable code is simpler to test and update.
+- Helpers make the project more predictable across runs.
+
+#### Submission Notes
+
+- A short walkthrough should show one helper function and how it is used.
+
+### 28. Milestone 4.28: Saving Processed Tables
+
+This milestone keeps the README milestone trail aligned with the branch history. The goal is to make the next step in the project easy to review and easy to compare against earlier branches.
+
+#### What It Demonstrates
+
+1. Documenting the current milestone in the project history.
+2. Keeping the branch sequence readable and predictable.
+3. Preserving the same documentation structure across updates.
+
+#### Why This Matters
+
+- Consistent milestone notes make branch review easier.
+- Small, repeated updates keep the change history simple to follow.
+
+#### Submission Notes
+
+- A short walkthrough should show the milestone section and how it fits into the sequence.
+
+### 29. Milestone 4.29: Recording Modeling Assumptions
+
+This milestone keeps the README milestone trail aligned with the branch history. The goal is to make the next step in the project easy to review and easy to compare against earlier branches.
+
+#### What It Demonstrates
+
+1. Documenting the current milestone in the project history.
+2. Keeping the branch sequence readable and predictable.
+3. Preserving the same documentation structure across updates.
+
+#### Why This Matters
+
+- Consistent milestone notes make branch review easier.
+- Small, repeated updates keep the change history simple to follow.
+
+#### Submission Notes
+
+- A short walkthrough should show the milestone section and how it fits into the sequence.
+
+### 30. Milestone 4.30: Checking Segment Stability
+
+This milestone keeps the README milestone trail aligned with the branch history. The goal is to make the next step in the project easy to review and easy to compare against earlier branches.
+
+#### What It Demonstrates
+
+1. Documenting the current milestone in the project history.
+2. Keeping the branch sequence readable and predictable.
+3. Preserving the same documentation structure across updates.
+
+#### Why This Matters
+
+- Consistent milestone notes make branch review easier.
+- Small, repeated updates keep the change history simple to follow.
+
+#### Submission Notes
+
+- A short walkthrough should show the milestone section and how it fits into the sequence.
+
+### 31. Milestone 4.31: Exporting Figures and Reports
+
+This milestone keeps the README milestone trail aligned with the branch history. The goal is to make the next step in the project easy to review and easy to compare against earlier branches.
+
+#### What It Demonstrates
+
+1. Documenting the current milestone in the project history.
+2. Keeping the branch sequence readable and predictable.
+3. Preserving the same documentation structure across updates.
+
+#### Why This Matters
+
+- Consistent milestone notes make branch review easier.
+- Small, repeated updates keep the change history simple to follow.
+
+#### Submission Notes
+
+- A short walkthrough should show the milestone section and how it fits into the sequence.
+
+### 32. Milestone 4.32: Structuring a Repeatable Notebook
+
+This milestone keeps the README milestone trail aligned with the branch history. The goal is to make the next step in the project easy to review and easy to compare against earlier branches.
+
+#### What It Demonstrates
+
+1. Documenting the current milestone in the project history.
+2. Keeping the branch sequence readable and predictable.
+3. Preserving the same documentation structure across updates.
+
+#### Why This Matters
+
+- Consistent milestone notes make branch review easier.
+- Small, repeated updates keep the change history simple to follow.
+
+#### Submission Notes
+
+- A short walkthrough should show the milestone section and how it fits into the sequence.
+
+### 33. Milestone 4.33: Preparing the Final Presentation
+
+This milestone keeps the README milestone trail aligned with the branch history. The goal is to make the next step in the project easy to review and easy to compare against earlier branches.
+
+#### What It Demonstrates
+
+1. Documenting the current milestone in the project history.
+2. Keeping the branch sequence readable and predictable.
+3. Preserving the same documentation structure across updates.
+
+#### Why This Matters
+
+- Consistent milestone notes make branch review easier.
+- Small, repeated updates keep the change history simple to follow.
+
+#### Submission Notes
+
+- A short walkthrough should show the milestone section and how it fits into the sequence.
+
+### 34. Milestone 4.34: Summarizing Next Steps
+
+This milestone keeps the README milestone trail aligned with the branch history. The goal is to make the next step in the project easy to review and easy to compare against earlier branches.
+
+#### What It Demonstrates
+
+1. Documenting the current milestone in the project history.
+2. Keeping the branch sequence readable and predictable.
+3. Preserving the same documentation structure across updates.
+
+#### Why This Matters
+
+- Consistent milestone notes make branch review easier.
+- Small, repeated updates keep the change history simple to follow.
+
+#### Submission Notes
+
+- A short walkthrough should show the milestone section and how it fits into the sequence.
