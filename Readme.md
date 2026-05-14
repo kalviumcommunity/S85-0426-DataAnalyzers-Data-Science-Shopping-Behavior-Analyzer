@@ -494,3 +494,22 @@ This milestone documents the interpretation of cluster centroids. The goal is to
 #### Submission Notes
 
 - A short walkthrough should show the centroid table and the main segment traits.
+
+### 25. Milestone 4.25: Naming Customer Segments
+
+This milestone documents the business-friendly naming of clusters. The goal is to turn numeric labels into understandable audience groups.
+
+#### What It Demonstrates
+
+1. Reviewing cluster characteristics.
+1. Assigning descriptive segment names.
+1. Mapping labels to marketing language.
+
+#### Why This Matters
+
+- Readable names make the model usable by non-technical teams.
+- Clear segment labels help with communication and reporting.
+
+#### Submission Notes
+
+- A short walkthrough should show the label mapping and the reasoning behind it.
