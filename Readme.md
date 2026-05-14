@@ -342,3 +342,22 @@ This milestone documents a small normalization step for customer identifiers so 
 #### Submission Notes
 
 - A short walkthrough should show the original and cleaned identifier examples.
+
+### 17. Milestone 4.17: Building Customer-Level Aggregates
+
+This milestone documents how raw transactions are turned into one row per customer. The goal is to build the features needed for clustering.
+
+#### What It Demonstrates
+
+1. Grouping transactions by customer.
+1. Calculating purchase frequency and spend totals.
+1. Creating a compact analysis table.
+
+#### Why This Matters
+
+- Clustering works better on customer-level features.
+- Aggregates make behavior patterns easier to compare.
+
+#### Submission Notes
+
+- A short walkthrough should show the source table and the aggregated output.
