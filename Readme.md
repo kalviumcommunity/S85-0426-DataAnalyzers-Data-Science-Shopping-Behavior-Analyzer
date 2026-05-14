@@ -323,3 +323,22 @@ This milestone documents the first cleanup pass on the raw dataset. The goal is 
 #### Submission Notes
 
 - A short walkthrough should show the before-and-after row counts and missing-value summary.
+
+### 16. Milestone 4.16: Standardizing Customer Identifiers
+
+This milestone documents a small normalization step for customer identifiers so records can be grouped consistently across files and analysis steps.
+
+#### What It Demonstrates
+
+1. Checking identifier formats.
+1. Removing inconsistent spacing or casing.
+1. Confirming each customer maps to a stable key.
+
+#### Why This Matters
+
+- Consistent IDs prevent duplicate customer records.
+- Stable keys make joins and summaries more dependable.
+
+#### Submission Notes
+
+- A short walkthrough should show the original and cleaned identifier examples.
