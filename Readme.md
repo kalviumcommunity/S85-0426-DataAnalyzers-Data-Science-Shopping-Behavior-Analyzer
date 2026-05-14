@@ -475,3 +475,22 @@ This milestone documents the main clustering run. The goal is to assign each cus
 #### Submission Notes
 
 - A short walkthrough should show the fitted model and the new cluster column.
+
+### 24. Milestone 4.24: Reading Cluster Centroids
+
+This milestone documents the interpretation of cluster centroids. The goal is to understand what makes each segment different from the others.
+
+#### What It Demonstrates
+
+1. Inspecting cluster centers.
+1. Comparing averages across segments.
+1. Translating numbers into customer behavior.
+
+#### Why This Matters
+
+- Centroids explain why clusters were formed.
+- Interpretation turns model output into business insight.
+
+#### Submission Notes
+
+- A short walkthrough should show the centroid table and the main segment traits.
