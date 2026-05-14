@@ -532,3 +532,22 @@ This milestone documents visual comparisons between clusters. The goal is to mak
 #### Submission Notes
 
 - A short walkthrough should show at least one chart comparing all segments.
+
+### 27. Milestone 4.27: Reusing Analysis Functions
+
+This milestone documents reusable helper functions for the analysis pipeline. The goal is to reduce repetition and keep the notebook easier to maintain.
+
+#### What It Demonstrates
+
+1. Moving repeated logic into functions.
+1. Passing data through clear inputs and outputs.
+1. Keeping the workflow easier to read.
+
+#### Why This Matters
+
+- Reusable code is simpler to test and update.
+- Helpers make the project more predictable across runs.
+
+#### Submission Notes
+
+- A short walkthrough should show one helper function and how it is used.
