@@ -513,3 +513,22 @@ This milestone documents the business-friendly naming of clusters. The goal is t
 #### Submission Notes
 
 - A short walkthrough should show the label mapping and the reasoning behind it.
+
+### 26. Milestone 4.26: Comparing Segments with Charts
+
+This milestone documents visual comparisons between clusters. The goal is to make differences easy to spot in a presentation or notebook.
+
+#### What It Demonstrates
+
+1. Building side-by-side charts.
+1. Comparing spend, frequency, or basket size.
+1. Highlighting the strongest segment differences.
+
+#### Why This Matters
+
+- Charts make clusters easier to review quickly.
+- Visual comparisons support stakeholder discussions.
+
+#### Submission Notes
+
+- A short walkthrough should show at least one chart comparing all segments.
