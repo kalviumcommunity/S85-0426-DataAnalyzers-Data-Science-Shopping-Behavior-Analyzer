@@ -399,3 +399,22 @@ This milestone documents a simple comparison of customer spending patterns. The 
 #### Submission Notes
 
 - A short walkthrough should show the spend summary and one supporting chart.
+
+### 20. Milestone 4.20: Selecting Features for Clustering
+
+This milestone documents feature selection for the segmentation model. The goal is to keep the inputs focused on shopping behavior rather than noise.
+
+#### What It Demonstrates
+
+1. Reviewing candidate columns.
+1. Dropping redundant or unstable fields.
+1. Keeping features that reflect behavior.
+
+#### Why This Matters
+
+- Good features improve cluster quality.
+- Focused inputs make the model easier to explain.
+
+#### Submission Notes
+
+- A short walkthrough should show why each selected feature was kept.
