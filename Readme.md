@@ -361,3 +361,22 @@ This milestone documents how raw transactions are turned into one row per custom
 #### Submission Notes
 
 - A short walkthrough should show the source table and the aggregated output.
+
+### 18. Milestone 4.18: Visualizing Purchase Frequency
+
+This milestone documents a first look at how often customers shop. The goal is to understand the spread before choosing modeling features.
+
+#### What It Demonstrates
+
+1. Counting purchases per customer.
+1. Plotting a distribution or bar chart.
+1. Spotting unusually active shoppers.
+
+#### Why This Matters
+
+- Visuals reveal structure faster than tables alone.
+- Frequency is often a strong behavioral signal.
+
+#### Submission Notes
+
+- A short walkthrough should show the chart and the main frequency takeaway.
