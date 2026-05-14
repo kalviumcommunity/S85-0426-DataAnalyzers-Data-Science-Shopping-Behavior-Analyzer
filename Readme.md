@@ -437,3 +437,22 @@ This milestone documents feature scaling before clustering. The goal is to preve
 #### Submission Notes
 
 - A short walkthrough should show the scaling step and one before/after comparison.
+
+### 22. Milestone 4.22: Using the Elbow Method
+
+This milestone documents the search for a sensible cluster count. The goal is to compare model fit across several values of K.
+
+#### What It Demonstrates
+
+1. Fitting several K-Means models.
+1. Plotting inertia or within-cluster distance.
+1. Choosing a candidate cluster count.
+
+#### Why This Matters
+
+- A good K avoids both over-splitting and over-merging.
+- The elbow plot provides a simple decision aid.
+
+#### Submission Notes
+
+- A short walkthrough should show the elbow plot and the chosen K.
