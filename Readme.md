@@ -418,3 +418,22 @@ This milestone documents feature selection for the segmentation model. The goal 
 #### Submission Notes
 
 - A short walkthrough should show why each selected feature was kept.
+
+### 21. Milestone 4.21: Scaling Numeric Features
+
+This milestone documents feature scaling before clustering. The goal is to prevent large-value columns from dominating the model.
+
+#### What It Demonstrates
+
+1. Applying a numeric scaler.
+1. Comparing raw and scaled values.
+1. Checking that all features sit on a similar range.
+
+#### Why This Matters
+
+- K-Means is sensitive to feature scale.
+- Balanced inputs create fairer distance calculations.
+
+#### Submission Notes
+
+- A short walkthrough should show the scaling step and one before/after comparison.
