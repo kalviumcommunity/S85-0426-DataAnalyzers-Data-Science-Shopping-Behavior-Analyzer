@@ -456,3 +456,22 @@ This milestone documents the search for a sensible cluster count. The goal is to
 #### Submission Notes
 
 - A short walkthrough should show the elbow plot and the chosen K.
+
+### 23. Milestone 4.23: Training the K-Means Model
+
+This milestone documents the main clustering run. The goal is to assign each customer to a segment based on the selected features.
+
+#### What It Demonstrates
+
+1. Creating the final K-Means model.
+1. Fitting it on the scaled customer table.
+1. Saving the assigned cluster labels.
+
+#### Why This Matters
+
+- This is the core segmentation step.
+- The labels become the basis for downstream analysis.
+
+#### Submission Notes
+
+- A short walkthrough should show the fitted model and the new cluster column.
